@@ -1,0 +1,27 @@
+.itemCard
+{
+  height: 380px;
+  text-align: center;
+  padding: 7px;
+  border: 2px solid antiquewhite;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+
+.itemCard>h4
+{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px !important;
+  line-height: 1.42857143;
+  color: #333;
+}
+.imgCard
+{
+  width: 60%;
+  height: 80%;
+}
+
+.itemCard:hover
+{
+  box-shadow: 10px 10px 10px 10px antiquewhite;
+}

@@ -1,0 +1,19 @@
+button
+{
+  text-align: center;
+}
+
+.headingDiv
+{
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  background-color: #292c2f;
+  color: white;
+}
+
+input .ng-invalid.ng-touched {
+  border: dotted 3px red;
+}
+

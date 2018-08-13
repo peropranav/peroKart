@@ -1,0 +1,38 @@
+<app-logout></app-logout>
+<div class="row">
+  <div class="col-md-12" style="text-align: center">
+    <a routerLink="../dashboard"><button class="btn btn-primary">Back To Dashboard</button> </a>
+
+  </div>
+</div>
+<div class="container">
+<div class="row" *ngFor="let data of sellorItemOnSale" style="background-color: aliceblue; margin-top: 10px;">
+
+
+  <div class="col-md-offset-1 col-md-2">
+      <img [src]="[data.imgLink]" class="imgSellorItemOnSale">
+
+    </div>
+
+
+  <div class="col-md-2">
+    <span>Name:</span>
+    <h3>{{data.name}} </h3>
+    <span>Price:</span>
+    <h3>{{data.price}}</h3>
+  </div>
+
+
+  <div class="col-md-2">
+    <span>Category</span>
+    <h4>{{data.sub_category}}</h4>
+  </div>
+  <div class="col-md-4">
+    <span>Description</span>
+    <h4>{{data.description}}</h4>
+  </div>
+
+
+</div>
+
+</div>

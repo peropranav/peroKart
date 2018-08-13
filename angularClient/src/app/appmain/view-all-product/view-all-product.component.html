@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="row" style="margin-top: 100px;">
+    <div  *ngFor="let dataView of viewAllProductArray | paginate: { itemsPerPage: 6, currentPage: p , totalItems: totalItem }">
+      <div class="col-md-3 col-md-offset-1  col-xs-8 col-xs-offset-2">
+        <div class="view-all-div">
+          <img src="{{dataView.imgLink}}" class="img-view-all-product">
+
+          <br>
+          <h4 style="margin-left: 40px;">{{dataView.name}}</h4>
+          <h4 style="margin-left: 40px;">Rs.{{dataView.price}}</h4>
+          <button class="btn btn-success" id="{{dataView._id}}" (click)="btnClicked(dataView._id)">Buy Now</button> &nbsp;
+
+          <a [routerLink]="[dataView._id]" >
+            <button  class="btn btn-primary" [id]="dataView._id">Look</button>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="row" style="margin-top: 30px;">
+    <div class="col-md-6 col-md-offset-5">
+      <pagination-controls (pageChange)="pageChanged($event)" ></pagination-controls>
+
+    </div>
+  </div>
+
+
+</div>

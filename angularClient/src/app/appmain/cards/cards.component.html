@@ -1,0 +1,101 @@
+
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-12">
+
+      <h2>Electronics   &nbsp;    <a routerLink="../app/electronics"> <button type="button" class="btn btn-primary">View All</button> </a>
+      </h2>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div *ngFor="let edata of electronicsData;">
+      <a [routerLink]="['../app','electronics',edata._id]">
+
+        <div class="col-md-3 itemCard" >
+          <img class="imgCard" src="{{edata.imgLink}}" >
+          <h4>{{edata.name}}</h4>
+          <h4>Rs:{{edata.price}}</h4>
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+  <div class="row" style="margin-top: 50px;">
+    <div class="col-md-12">
+
+      <h2>Fashion &nbsp;       <a routerLink="../app/fashion"> <button type="button" class="btn btn-primary">View All</button> </a>
+      </h2>
+    </div>
+  </div>
+
+
+  <div class="row" >
+    <div *ngFor="let fdata of fashionData;">
+      <a [routerLink]="['../app','fashion',fdata._id]">
+
+        <div class="col-md-3 itemCard" >
+          <img class="imgCard" src="{{fdata.imgLink}}" >
+          <h4>{{fdata.name}}</h4>
+          <h4>Rs:{{fdata.price}}</h4>
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+
+  <div class="row"  style="margin-top: 50px;">
+    <div class="col-md-12">
+
+      <h2>Books      <a routerLink="../app/books"> <button type="button" class="btn btn-primary">View All</button> </a>
+      </h2>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div *ngFor="let bdata of booksData;">
+      <a [routerLink]="['../app','books',bdata._id]">
+
+        <div class="col-md-3 itemCard">
+          <img class="imgCard" src="{{bdata.imgLink}}" >
+          <h4>{{bdata.name}}</h4>
+          <h4>{{bdata.price}}</h4>
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+  <div class="row" style="margin-top: 50px;">
+    <div class="col-md-12">
+
+      <h2>Watches       <a routerLink="../app/watches"> <button type="button" class="btn btn-primary">View All</button> </a>
+      </h2>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div *ngFor="let wdata of watchesData;">
+      <a [routerLink]="['../app','watches',wdata._id]">
+        <div class="col-md-3 itemCard">
+          <img class="imgCard" src="{{wdata.imgLink}}" >
+          <h4>{{wdata.name}}</h4>
+          <h4>{{wdata.price}}</h4>
+        </div>
+      </a>
+    </div>
+  </div>
+
+
+
+
+
+</div>
+

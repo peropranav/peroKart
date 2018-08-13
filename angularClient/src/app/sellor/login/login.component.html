@@ -1,0 +1,32 @@
+<form (ngSubmit)="onSubmit()" #f="ngForm" class="form-group">
+  <div class="row">
+    <div class="col-md-5 col-md-offset-4">
+      <div class="headingDiv">Log Into Your Account</div>
+      <div class="cardLogin">
+        <input type="text" placeholder="Enter Username" required ngModel name="username" #username="ngModel" class="form-control" minlength="4" maxlength="10">
+        <span *ngIf="!username.valid && username.touched " style="color: red">User Name is required</span>
+        <span *ngIf="username.errors?.minlength" style="color: red">User Name must be at least 4 characters long.</span>
+        <br> <br>
+        <input type="password" placeholder="Password" required ngModel name="password" #password="ngModel" class="form-control">
+        <span *ngIf="!password.valid && password.touched"  style="color: red">Password is required</span>
+        <br> <br>
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-5 col-md-offset-4" style="text-align: center">
+      <button class="btn btn-primary" type="submit" [disabled]="!f.valid">Login</button>
+      <br> <br>
+    </div>
+  </div>
+
+</form>
+<div class="row">
+  <div class="col-md-5 col-md-offset-4" style="text-align: center">
+    <a routerLink="../signup">     <button class="btn btn-primary">Register/SignUp with Us</button ></a>
+  </div>
+</div>
+

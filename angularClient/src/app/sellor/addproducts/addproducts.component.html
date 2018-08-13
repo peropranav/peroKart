@@ -1,0 +1,92 @@
+<br> <br>
+
+<div class="container">
+  <div class="row" style="height: 500px;">
+    <div class="col-md-2 col-md-offset-1" style="background-color: #07B3F9;height: 680px;text-align: center">
+
+      <h2 class="adminPanel_admin">U</h2>
+      <h2 class="adminPanel_admin" >S</h2>
+      <h2 class="adminPanel_admin">E</h2>
+      <h2 class="adminPanel_admin">R</h2>
+      <h2 class="adminPanel_panel">P</h2>
+      <h2  class="adminPanel_panel">A</h2>
+      <h2  class="adminPanel_panel">N</h2>
+      <h2  class="adminPanel_panel">E</h2>
+      <h2 class="adminPanel_panel">L</h2>
+
+    </div>
+
+    <div class="col-md-8" style="height: 680px; background-color: rgb(204,246,255)">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Product Name</h2>
+          <textarea type="text" [(ngModel)]="name"></textarea>
+
+        </div>
+        <div class="col-md-6">
+          <h2>Price</h2>
+          <textarea type="number" [(ngModel)]="price"></textarea>
+
+
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-10">
+          <h2>Description</h2>
+          <textarea type="text" [(ngModel)]="description" style="height: 90px;"></textarea>
+
+        </div>
+      </div>
+      <br>
+      <div class="row">
+
+        <div class="col-md-3">
+
+          <input type="file" id="files" name="avatar" (change)="onFileSelectedListener($event.target.files)" class="hidden">
+          <label for="files"><div class="selectImageIcon"><i class="fas fa-upload"></i> </div></label>
+
+        </div>
+
+
+        <div class="col-md-4">
+          <img [src]="imgUrl" style="width: 100%;height: 350px;">
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+
+          <select (change)="categorySelect($event)" style="height: 40px;font-size: 20px;" [(ngModel)]="selectedSelect">
+            <option hidden disabled >Select Category</option>
+            <option value="electronics">Electronics</option>
+            <option value="fashion">Fashion</option>
+            <option value="books">Books</option>
+            <option value="watches">Watches</option>
+          </select>
+          <br> <br>
+
+          <select style="height: 40px;font-size: 20px;" *ngIf=subCatDisplay  (change)="sub_categorySelect($event)">
+            <option hidden disabled>Select Sub Category</option>
+            <option>{{subCatoption1}}</option>
+            <option>{{subCatoption2}}</option>
+            <option>{{subCatoption3}}</option>
+            <option>{{subCatoption4}}</option>
+          </select>
+
+
+          <button type="submit" class="btn btn-success" style="margin-top: 110px;width: 100%;font-size: 30px;font-family: 'Merienda', cursive" (click)="postData()" >Submit</button>
+        </div>
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+</div>

@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="row" style="margin-top: 30px;" *ngFor="let data of cartItem">
+    <div class="col-md-1 col-md-offset-2 col-xs-3" style="height: 120px;">
+      <img src="{{data.imgLink}}" class="cart-img">
+    </div>
+
+    <div class="col-md-2 col-xs-9">
+
+      <p class="text-cart">Rs. {{data.price }}</p>
+      <p class="text-cart">{{data.name}} </p>
+    </div>
+
+
+    <div class="col-md-2 col-xs-4">
+      <h3>
+        <span style="margin-right: 10px;" (click)="incrementQuantity(data._id)"><i class="fas fa-plus-circle"></i></span>{{data.quantity}}<span style="margin-left: 10px;" (click)="decrementQuantity(data._id)"><i class="fas fa-minus-circle"></i></span>
+      </h3>
+    </div>
+    <div class="col-md-1 col-xs-4">
+      <h3>{{data.quantity * data.price}}</h3>
+    </div>
+
+    <div class="col-md-2 col-md-offset-1 col-xs-4">
+      <button class="btn btn-danger" id="{{data._id}}" (click)="deleteFromArray(data._id)">Delete</button>
+    </div>
+
+
+  </div>
+  <div class="row" style="margin-top: 30px;height: 70px;">
+    <div class="col-md-8 col-md-offset-4">
+      <h1>Total Bill : Rs {{totalBillAmount}}</h1>
+
+    </div>
+  </div>
+</div>

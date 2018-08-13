@@ -1,0 +1,43 @@
+<form (ngSubmit)="onSubmit()" #f="ngForm" class="form-group">
+<div class="row">
+<div class="col-md-5 col-md-offset-4">
+  <div class="headingDiv">Be a part of peroKart</div>
+  <div class="cardLogin">
+
+    <input type="text" placeholder="Enter Name"  name="sellorName"  ngModel required class="form-control" #sellorName="ngModel" >
+    <span *ngIf="!sellorName.valid && sellorName.touched" style="color: red">Name is required</span>
+<br><br>
+    <input type="text" placeholder="Choose Username" required ngModel name="username" #username="ngModel" class="form-control" minlength="4" maxlength="10">
+    <span *ngIf="!username.valid && username.touched " style="color: red">User Name is required</span>
+    <span *ngIf="username.errors?.minlength" style="color: red">User Name must be at least 4 characters long.</span>
+    <br> <br>
+    <input type="password" placeholder="Set Password" required ngModel name="password" #password="ngModel" class="form-control">
+    <span *ngIf="!password.valid && password.touched"  style="color: red">Password is required</span>
+    <br> <br>
+    <input type="number" placeholder="Enter Phone No." required ngModel #phoneNumber="ngModel" name="phoneNumber" class="form-control">
+    <span *ngIf="!phoneNumber.valid && phoneNumber.touched"  style="color: red">Phone Number is required</span>
+
+    <br> <br>
+
+
+
+</div>
+
+</div>
+</div>
+
+<div class="row">
+  <div class="col-md-5 col-md-offset-4" style="text-align: center">
+    <button class="btn btn-primary" type="submit" [disabled]="!f.valid">Register With Us</button>
+    <br> <br>
+  </div>
+</div>
+
+</form>
+<div class="row">
+  <div class="col-md-5 col-md-offset-4" style="text-align: center">
+    <button class="btn btn-success" (click)="resetForm()">Reset</button> &nbsp;
+    <a routerLink="../login">     <button class="btn btn-primary">Log In</button ></a>
+  </div>
+</div>
+
