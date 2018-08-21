@@ -24,9 +24,9 @@ textarea
 
 .selectImageIcon
 {
-  text-align: center;
-  height: 150px;
-  width: 150px;
+
+  height: 30px;
+  width: 50%;
   font-size: 80px;
   text-shadow: 10px 10px lightblue;
 

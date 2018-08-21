@@ -6,6 +6,7 @@ var portDev= require('../../../config');
 var verifyToken=require('../auth/verifyToken');
 const port=process.env.PORT ||portDev.port;
 const sellorSchema = require('../../model/sellor')
+var Mongoose= require('mongoose');
 ////////////////////////////         REQUIRING THE MODELS          /////////////////////////
 
 
@@ -86,7 +87,7 @@ console.log(pathOfFile)
                 if (err) {
                     res.json({"error": true});
                 } else {
-                    res.sendStatus(200)
+                    res.json({"ok":"true"});
 
                 }
             });
@@ -119,7 +120,7 @@ console.log(pathOfFile)
                 if (err) {
                     res.json({"error": true});
                 } else {
-                    res.sendStatus(200)
+                    res.json({"ok":"true"});
 
                 }
             });
@@ -153,7 +154,7 @@ console.log(pathOfFile)
                 if (err) {
                     res.json({"error": true});
                 } else {
-                    res.sendStatus(200)
+                    res.json({"ok":"true"});
 
                 }
             });
@@ -185,8 +186,8 @@ console.log(pathOfFile)
                 if (err) {
                     res.json({"error": true});
                 } else {
-                    res.sendStatus(200)
-
+                    // res.sendStatus(200)
+                    res.json({"ok":"true"});
                 }
             });
 
@@ -197,6 +198,144 @@ console.log(pathOfFile)
 
 })
 
+
+router.post('/updateSellorDB', verifyToken,function (req,res) {
+    console.log(req.body);
+     // let userData =  sellorSchema.find({_id:req.userId, itemsOnSale :{$elemMatch: {_id :Mongoose.Types.ObjectId(req.body.id)}}}).exec((err,res)=>{
+     //
+     //     console.log(":::::ERROR",err);
+     //     console.log(":::::RES",res);
+     //
+     // })
+
+  sellorSchema.updateOne({_id:req.userId,itemsOnSale: {$elemMatch: {_id: Mongoose.Types.ObjectId(req.body.id) }}},{ $set: { "itemsOnSale.$.name" : req.body.name ,
+
+        "itemsOnSale.$.price": req.body.price, "itemsOnSale.$.description":req.body.description}})
+        .exec(function (err,result) {
+            if(err)
+            {
+                console.log("::::::::::ERROR occurred",err);
+                res.status(304).send({'error': true});
+            }
+            else
+            {
+                console.log('updated in sellor:',result);
+
+
+                var promise1Electronics = new Promise(function(resolve , reject)
+                {
+                    electronicsData.update({_id:req.body.id}, {
+                        $set:
+                            {
+                                name: req.body.name,
+                                price: req.body.price,
+                                description: req.body.description
+                            }
+
+
+                    }).exec(function (err, result) {
+                        if(err)
+                        {
+                            console.log(err);
+                        }
+                        else
+                            {
+                             console.log(result);
+                             resolve();
+                            }
+                    })
+                });
+
+
+                var promise2Fashion = new Promise(function(resolve, reject)
+                {
+                    fashionData.update({_id:req.body.id}, {
+                        $set:
+                            {
+                                name: req.body.name,
+                                price: req.body.price,
+                                description: req.body.description
+                            }
+
+
+                    }).exec(function (err, result) {
+                        if(err)
+                        {
+                            console.log(err);
+                        }
+                        else
+                        {
+                            console.log(result);
+                            resolve();
+                        }
+                    })
+                });
+
+
+
+
+
+                var promise3Books = new Promise(function(resolve, reject)
+
+                {
+                    booksData.update({_id:req.body.id}, {
+                        $set:
+                            {
+                                name: req.body.name,
+                                price: req.body.price,
+                                description: req.body.description
+                            }
+
+
+                    }).exec(function (err, result) {
+                        if(err)
+                        {
+                            console.log(err);
+                        }
+                        else
+                        {
+                            console.log(result);
+                            resolve();
+                        }
+                    })
+                });
+
+                var promise4Watches = new Promise(function(resolve, reject)
+
+                {
+                    watchesData.update({_id:req.body.id}, {
+                        $set:
+                            {
+                                name: req.body.name,
+                                price: req.body.price,
+                                description: req.body.description
+                            }
+
+
+                    }).exec(function (err, result) {
+                        if(err)
+                        {
+                            console.log(err);
+                        }
+                        else
+                        {
+                            console.log(result);
+                            resolve();
+                        }
+                    })
+                });
+
+
+
+                Promise.all([promise1Electronics,promise2Fashion,promise3Books,promise4Watches])
+                    .then(function () {
+
+                        res.status(200).send({'updated': true});
+            });
+
+        }});
+
+});
 
 
 // router.get('/adminView',function (req,res) {

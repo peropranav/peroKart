@@ -5,12 +5,19 @@ import {port} from '../../../../config.js';
   providedIn: 'root'
 })
 export class SellorServiceService {
-
+objUpdateData: any = {};
   constructor(private http:HttpClient) { }
     createUser(user){
     console.log('on service')
       console.log(user.value)
       return this.http.post(`http://localhost:${port}/api/auth/register`, user.value);
+
+  }
+  updateSellorDB(id, name, price, description, userTokenObj){
+    const headerUpdate = new HttpHeaders({['x-access-token']: userTokenObj['token']});
+    headerUpdate.append('x-access-token', userTokenObj['token']);
+    this.objUpdateData = { 'id': id,'name': name, 'price': price, 'description': description};
+    return this.http.post(`http://localhost:${port}/api/uploadData/updateSellorDB`, this.objUpdateData, {headers: headerUpdate});
 
   }
   loginUser(user){

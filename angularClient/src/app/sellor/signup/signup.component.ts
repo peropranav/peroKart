@@ -27,14 +27,14 @@ this.signupService.createUser(this.signForm)
         console.log("duplicated username , angular")
         swal('username exist', 'This username already exist, plese choose other', 'warning');
         this.resetForm();
-        this.router.navigate(['user/signup'])
+        this.router.navigate(['sellor/signup'])
       }
       else{
 console.log('new username')
         var tokenObj = response;
       localStorage.setItem('user', JSON.stringify(tokenObj));
       swal('User Added!', 'You are successfully registered', 'success');
-      this.router.navigate(['user/login'])
+      this.router.navigate(['sellor/login'])
       this.resetForm();
 
     }

@@ -1,31 +1,17 @@
 <br> <br>
-
 <div class="container">
-  <div class="row" style="height: 500px;">
-    <div class="col-md-2 col-md-offset-1" style="background-color: #07B3F9;height: 680px;text-align: center">
+  <div class="row">
 
-      <h2 class="adminPanel_admin">U</h2>
-      <h2 class="adminPanel_admin" >S</h2>
-      <h2 class="adminPanel_admin">E</h2>
-      <h2 class="adminPanel_admin">R</h2>
-      <h2 class="adminPanel_panel">P</h2>
-      <h2  class="adminPanel_panel">A</h2>
-      <h2  class="adminPanel_panel">N</h2>
-      <h2  class="adminPanel_panel">E</h2>
-      <h2 class="adminPanel_panel">L</h2>
-
-    </div>
-
-    <div class="col-md-8" style="height: 680px; background-color: rgb(204,246,255)">
+    <div class="col-md-8 col-md-offset-2" style="background-color: rgb(204,246,255)">
       <div class="row">
         <div class="col-md-6">
           <h2>Product Name</h2>
-          <textarea type="text" [(ngModel)]="name"></textarea>
+          <textarea type="text"  [(ngModel)]="name" required></textarea>
 
         </div>
         <div class="col-md-6">
           <h2>Price</h2>
-          <textarea type="number" [(ngModel)]="price"></textarea>
+          <textarea type="number" [(ngModel)]="price" required></textarea>
 
 
         </div>
@@ -34,27 +20,27 @@
       <div class="row">
         <div class="col-md-10">
           <h2>Description</h2>
-          <textarea type="text" [(ngModel)]="description" style="height: 90px;"></textarea>
+          <textarea type="text" [(ngModel)]="description" style="height: 90px;" required></textarea>
 
         </div>
       </div>
       <br>
       <div class="row">
 
-        <div class="col-md-3">
+        <div class="col-md-3 col-xs-4" style="text-align: center">
 
-          <input type="file" id="files" name="avatar" (change)="onFileSelectedListener($event.target.files)" class="hidden">
+          <input type="file" id="files" name="avatar" (change)="onFileSelectedListener($event.target.files)" class="hidden" required>
           <label for="files"><div class="selectImageIcon"><i class="fas fa-upload"></i> </div></label>
 
         </div>
 
 
-        <div class="col-md-4">
-          <img [src]="imgUrl" style="width: 100%;height: 350px;">
+        <div class="col-md-4 col-md-offset-0 col-xs-8">
+          <img [src]="imgUrl" style="width: 80%;height: 250px;">
         </div>
         <div class="col-md-3 col-md-offset-1">
 
-          <select (change)="categorySelect($event)" style="height: 40px;font-size: 20px;" [(ngModel)]="selectedSelect">
+          <select (change)="categorySelect($event)" style="height: 40px;font-size: 20px;" [(ngModel)]="selectedSelect" required>
             <option hidden disabled >Select Category</option>
             <option value="electronics">Electronics</option>
             <option value="fashion">Fashion</option>
@@ -63,7 +49,7 @@
           </select>
           <br> <br>
 
-          <select style="height: 40px;font-size: 20px;" *ngIf=subCatDisplay  (change)="sub_categorySelect($event)">
+          <select style="height: 40px;font-size: 20px;" *ngIf=subCatDisplay  (change)="sub_categorySelect($event)" required>
             <option hidden disabled>Select Sub Category</option>
             <option>{{subCatoption1}}</option>
             <option>{{subCatoption2}}</option>
@@ -72,7 +58,7 @@
           </select>
 
 
-          <button type="submit" class="btn btn-success" style="margin-top: 110px;width: 100%;font-size: 30px;font-family: 'Merienda', cursive" (click)="postData()" >Submit</button>
+          <button type="submit" class="btn btn-success" style="margin-top: 110px;width: 100%;font-size: 30px;font-family: 'Merienda', cursive" (click)="postDataChecker()" >Submit</button>
         </div>
 
       </div>
@@ -86,7 +72,7 @@
 
 
 
-
+<br> <br> <br>
 
 
 </div>

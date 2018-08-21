@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {NgxSpinnerService} from 'ngx-spinner';
 import {HttpHeaders} from "@angular/common/http";
-
+import swal from 'sweetalert';
 @Component({
   selector: 'app-addproducts',
   templateUrl: './addproducts.component.html',
@@ -11,22 +11,24 @@ import {HttpHeaders} from "@angular/common/http";
 export class AddproductsComponent implements OnInit {
   constructor(private http: HttpClient, private spinner: NgxSpinnerService) { }
   imgUrl = '../../assets/images/blankImg.jpg';
-  name: string ;
-  description: string;
-  price: string;
-  category: string;
+  name = '' ;
+  description = '';
+  errorString ='';
+  price = '';
+  flag = 0 ;
+  category = '';
   selectedSelect = 'Select Category';
-  sub_category: string;
+  sub_category = '';
   subCatDisplay = false;
   selectedFile: File = null;
   electronicsSubcat = [ 'Phone', 'Music Accessories' , 'Home Appliances' , 'Laptops' ] ;
   fashionSubcat = [ 'Wedding' , 'Jewellery' , 'Party' , 'Sports'];
   booksSubcat = [ 'Mystery', 'Autobiography' , 'Love' , 'Science' ] ;
   watchesSubcat = [ 'Branded' , 'Formal' , 'Sporty' , 'Casual' ];
-  subCatoption1: String;
-  subCatoption2: String;
-  subCatoption3: String;
-  subCatoption4: String;
+  subCatoption1: String ='';
+  subCatoption2: String = '';
+  subCatoption3: String = '';
+  subCatoption4: String = '';
   onFileSelectedListener(file: FileList) {
     this.selectedFile = file.item(0);
     console.log(event);
@@ -74,13 +76,60 @@ export class AddproductsComponent implements OnInit {
     }
 
   }
-  postData() {
 
+  postDataChecker()
+  {
+    this.flag =0;
+    this.errorString =''
+    if(this.name.length <=0 )
+    {
+      this.flag++;
+      this.errorString = this.errorString + 'Name missing !! \t \t \t \t \t \t';
+    }
+    if (this.category.length <=0)
+    {
+      this.flag++;
+      this.errorString = this.errorString + 'Category missing !! \n';
+    }
+    if (this.sub_category.length <=0)
+    {
+      this.flag++;
+      this.errorString = this.errorString + 'Sub Category missing !! \t \t \t \t \t \t ';
+    }
+    if (this.price.length <=0)
+    {
+      this.flag++;
+      this.errorString = this.errorString + 'Price missing !! \n';
+    }
+    if (this.description.length <=0)
+    {
+      this.flag++;
+      this.errorString = this.errorString + 'Description missing !! \t \t \t \t \t \t';
+    }
+
+    if(this.selectedFile == null)
+    {
+      this.flag++;
+      this.errorString = this.errorString + 'Img Missing !! \n';
+
+    }
+
+    if(this.flag > 0)
+    {
+      console.log(this.flag)
+      swal('INCOMPLETE FORM!' , this.errorString, 'warning');
+
+    }
+
+    else
+      {
+      this.postData();
+    }
+  }
+  postData() {
     var userTokenObj= localStorage.getItem('userTokenObj')
     userTokenObj = JSON.parse(userTokenObj);
     var headerUploadData = new HttpHeaders({['x-access-token']: userTokenObj['token']});
-
-    this.spinner.show();
     console.log('hello client' , this.name);
     var fd = new FormData();
     fd.append('name' , this.name);
@@ -91,13 +140,12 @@ export class AddproductsComponent implements OnInit {
     fd.append('avatar', this.selectedFile, this.selectedFile.name);
     console.log(fd);
     console.log('headers:', headerUploadData)
-    this.http.post('http://localhost:3000/api/uploadData', fd , {headers: headerUploadData }).subscribe(
+    this.http.post('http://localhost:3000/api/uploadData', fd , {headers: headerUploadData}).subscribe(
       (success) => {
-        console.log('added succesfully');
-        setTimeout(() => {
-          /** spinner ends after 5 seconds */
-          this.spinner.hide();
-        }, 2000);
+
+swal('Added Succesfully', 'Added to your database', 'success');
+
+
         this.selectedFile = null;
         this.imgUrl = '../../assets/images/blankImg.jpg';
         this.name = '';

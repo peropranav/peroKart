@@ -3,7 +3,7 @@
   height: 380px;
   text-align: center;
   padding: 7px;
-  border: 2px solid antiquewhite;
+  border: 1px solid antiquewhite;
   transition: box-shadow 0.3s ease-in-out;
 }
 

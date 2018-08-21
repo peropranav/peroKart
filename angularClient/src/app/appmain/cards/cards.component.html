@@ -2,6 +2,31 @@
 
 <div class="container">
 
+
+
+
+  <div class="row"  style="margin-top: 50px;">
+    <div class="col-md-12">
+
+      <h2>Books      <a routerLink="../app/books"> <button type="button" class="btn btn-primary">View All</button> </a>
+      </h2>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div *ngFor="let bdata of booksData;">
+      <a [routerLink]="['../app','books',bdata._id]">
+
+        <div class="col-md-3 itemCard">
+          <img class="imgCard" src="{{bdata.imgLink}}" >
+          <h4>{{bdata.name}}</h4>
+          <h4>{{bdata.price}}</h4>
+        </div>
+      </a>
+    </div>
+  </div>
+
   <div class="row">
     <div class="col-md-12">
 
@@ -47,29 +72,6 @@
     </div>
   </div>
 
-
-
-  <div class="row"  style="margin-top: 50px;">
-    <div class="col-md-12">
-
-      <h2>Books      <a routerLink="../app/books"> <button type="button" class="btn btn-primary">View All</button> </a>
-      </h2>
-    </div>
-  </div>
-
-
-  <div class="row">
-    <div *ngFor="let bdata of booksData;">
-      <a [routerLink]="['../app','books',bdata._id]">
-
-        <div class="col-md-3 itemCard">
-          <img class="imgCard" src="{{bdata.imgLink}}" >
-          <h4>{{bdata.name}}</h4>
-          <h4>{{bdata.price}}</h4>
-        </div>
-      </a>
-    </div>
-  </div>
 
 
   <div class="row" style="margin-top: 50px;">
