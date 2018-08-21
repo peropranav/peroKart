@@ -3,24 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="13ea031f-0437-4278-a2e0-98b0fc249774" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularClient/angular.json" afterPath="$PROJECT_DIR$/angularClient/angular.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularClient/package-lock.json" afterPath="$PROJECT_DIR$/angularClient/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularClient/package.json" afterPath="$PROJECT_DIR$/angularClient/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularClient/src/app/appmain/cards/cards.component.css" afterPath="$PROJECT_DIR$/angularClient/src/app/appmain/cards/cards.component.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularClient/src/app/appmain/cards/cards.component.html" afterPath="$PROJECT_DIR$/angularClient/src/app/appmain/cards/cards.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularClient/src/app/appmain/layout/layout.component.html" afterPath="$PROJECT_DIR$/angularClient/src/app/appmain/layout/layout.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularClient/src/app/appmain/layout/layout.component.ts" afterPath="$PROJECT_DIR$/angularClient/src/app/appmain/layout/layout.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularClient/src/app/sellor/addproducts/addproducts.component.css" afterPath="$PROJECT_DIR$/angularClient/src/app/sellor/addproducts/addproducts.component.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularClient/src/app/sellor/addproducts/addproducts.component.html" afterPath="$PROJECT_DIR$/angularClient/src/app/sellor/addproducts/addproducts.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularClient/src/app/sellor/addproducts/addproducts.component.ts" afterPath="$PROJECT_DIR$/angularClient/src/app/sellor/addproducts/addproducts.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularClient/src/app/sellor/editproducts/editproducts.component.css" afterPath="$PROJECT_DIR$/angularClient/src/app/sellor/editproducts/editproducts.component.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularClient/src/app/sellor/editproducts/editproducts.component.html" afterPath="$PROJECT_DIR$/angularClient/src/app/sellor/editproducts/editproducts.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularClient/src/app/sellor/editproducts/editproducts.component.ts" afterPath="$PROJECT_DIR$/angularClient/src/app/sellor/editproducts/editproducts.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularClient/src/app/sellor/logout/logout.component.html" afterPath="$PROJECT_DIR$/angularClient/src/app/sellor/logout/logout.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularClient/src/app/sellor/sellor-service.service.ts" afterPath="$PROJECT_DIR$/angularClient/src/app/sellor/sellor-service.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularClient/src/app/sellor/signup/signup.component.ts" afterPath="$PROJECT_DIR$/angularClient/src/app/sellor/signup/signup.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularClient/src/index.html" afterPath="$PROJECT_DIR$/angularClient/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeServer/routes/dataUpload/dataUpload.js" afterPath="$PROJECT_DIR$/nodeServer/routes/dataUpload/dataUpload.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,35 +18,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dataUpload.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/nodeServer/routes/dataUpload/dataUpload.js">
+      <file leaf-file-name="editproducts.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angularClient/src/app/sellor/editproducts/editproducts.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1458">
-              <caret line="232" column="29" lean-forward="true" selection-start-line="232" selection-start-column="29" selection-end-line="232" selection-end-column="29" />
+            <state relative-caret-position="310">
+              <caret line="79" column="20" lean-forward="true" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
               <folding>
-                <marker date="1534845443869" expanded="true" signature="5393:5651" ph="..." />
-                <marker date="1534845443869" expanded="true" signature="5654:9728" ph="..." />
+                <element signature="n#style#0;n#textarea#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="fashionModel.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nodeServer/model/fashionModel.js">
+      <file leaf-file-name="addproducts.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/angularClient/src/app/sellor/addproducts/addproducts.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mainPageData.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nodeServer/routes/mainPageData/mainPageData.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1133">
-              <caret line="85" column="0" lean-forward="true" selection-start-line="83" selection-start-column="4" selection-end-line="85" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="-35">
+              <caret line="48" column="19" lean-forward="true" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+              <folding>
+                <element signature="n#style#0;n#select#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#1;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#button#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,7 +96,6 @@
         <option value="$PROJECT_DIR$/angularClient/src/index.html" />
         <option value="$PROJECT_DIR$/angularClient/src/app/appmain/layout/layout.component.ts" />
         <option value="$PROJECT_DIR$/angularClient/angular.json" />
-        <option value="$PROJECT_DIR$/angularClient/src/app/sellor/addproducts/addproducts.component.html" />
         <option value="$PROJECT_DIR$/angularClient/src/app/appmain/layout/layout.component.html" />
         <option value="$PROJECT_DIR$/angularClient/src/app/sellor/logout/logout.component.html" />
         <option value="$PROJECT_DIR$/angularClient/src/app/appmain/cards/cards.component.css" />
@@ -124,11 +103,12 @@
         <option value="$PROJECT_DIR$/angularClient/src/app/sellor/addproducts/addproducts.component.ts" />
         <option value="$PROJECT_DIR$/angularClient/src/app/sellor/signup/signup.component.ts" />
         <option value="$PROJECT_DIR$/angularClient/src/app/sellor/editproducts/editproducts.component.css" />
-        <option value="$PROJECT_DIR$/angularClient/src/app/sellor/editproducts/editproducts.component.html" />
         <option value="$PROJECT_DIR$/angularClient/src/app/sellor/sellor-service.service.ts" />
         <option value="$PROJECT_DIR$/angularClient/src/app/sellor/editproducts/editproducts.component.ts" />
         <option value="$PROJECT_DIR$/nodeServer/model/sellor.js" />
         <option value="$PROJECT_DIR$/nodeServer/routes/dataUpload/dataUpload.js" />
+        <option value="$PROJECT_DIR$/angularClient/src/app/sellor/addproducts/addproducts.component.html" />
+        <option value="$PROJECT_DIR$/angularClient/src/app/sellor/editproducts/editproducts.component.html" />
       </list>
     </option>
   </component>
@@ -177,6 +157,50 @@
             <path>
               <item name="myEkart github" type="b2602c69:ProjectViewProjectNode" />
               <item name="myEkart github" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myEkart github" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myEkart github" type="462c0819:PsiDirectoryNode" />
+              <item name="angularClient" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myEkart github" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myEkart github" type="462c0819:PsiDirectoryNode" />
+              <item name="angularClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myEkart github" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myEkart github" type="462c0819:PsiDirectoryNode" />
+              <item name="angularClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myEkart github" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myEkart github" type="462c0819:PsiDirectoryNode" />
+              <item name="angularClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="sellor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myEkart github" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myEkart github" type="462c0819:PsiDirectoryNode" />
+              <item name="angularClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="sellor" type="462c0819:PsiDirectoryNode" />
+              <item name="addproducts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myEkart github" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myEkart github" type="462c0819:PsiDirectoryNode" />
+              <item name="angularClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="sellor" type="462c0819:PsiDirectoryNode" />
+              <item name="editproducts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myEkart github" type="b2602c69:ProjectViewProjectNode" />
@@ -280,12 +304,12 @@
       <workItem from="1534403021562" duration="396000" />
       <workItem from="1534403461615" duration="12000" />
       <workItem from="1534415368350" duration="5398000" />
-      <workItem from="1534749005429" duration="18428000" />
+      <workItem from="1534749005429" duration="19988000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63401000" />
+    <option name="totallyTimeSpent" value="64961000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -557,14 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angularClient/src/app/sellor/addproducts/addproducts.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-50">
-          <caret line="47" column="52" lean-forward="true" selection-start-line="47" selection-start-column="52" selection-end-line="47" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angularClient/src/app/sellor/addproducts/addproducts.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-81">
@@ -643,20 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angularClient/src/app/sellor/editproducts/editproducts.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="37" column="148" lean-forward="false" selection-start-line="37" selection-start-column="148" selection-end-line="37" selection-end-column="148" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#input#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#input#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angularClient/src/app/sellor/sellor-service.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
@@ -709,11 +711,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nodeServer/routes/dataUpload/dataUpload.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1458">
+        <state relative-caret-position="203">
           <caret line="232" column="29" lean-forward="true" selection-start-line="232" selection-start-column="29" selection-end-line="232" selection-end-column="29" />
           <folding>
             <marker date="1534845443869" expanded="true" signature="5393:5651" ph="..." />
             <marker date="1534845443869" expanded="true" signature="5654:9728" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularClient/src/app/sellor/editproducts/editproducts.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="79" column="20" lean-forward="true" selection-start-line="79" selection-start-column="20" selection-end-line="79" selection-end-column="20" />
+          <folding>
+            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularClient/src/app/sellor/addproducts/addproducts.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-35">
+          <caret line="48" column="19" lean-forward="true" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#select#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#1;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#div#2;n#div#2;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

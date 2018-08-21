@@ -38,9 +38,9 @@
         <div class="col-md-4 col-md-offset-0 col-xs-8">
           <img [src]="imgUrl" style="width: 80%;height: 250px;">
         </div>
-        <div class="col-md-3 col-md-offset-1">
+        <div class="col-md-3 col-md-offset-1 col-xs-12">
 
-          <select (change)="categorySelect($event)" style="height: 40px;font-size: 20px;" [(ngModel)]="selectedSelect" required>
+          <select (change)="categorySelect($event)" style="height: 40px;font-size: 20px; background-color: sandybrown; margin-top: 10px;" [(ngModel)]="selectedSelect" required>
             <option hidden disabled >Select Category</option>
             <option value="electronics">Electronics</option>
             <option value="fashion">Fashion</option>
@@ -49,7 +49,7 @@
           </select>
           <br> <br>
 
-          <select style="height: 40px;font-size: 20px;" *ngIf=subCatDisplay  (change)="sub_categorySelect($event)" required>
+          <select style="height: 40px;font-size: 20px;background-color: sandybrown;" *ngIf=subCatDisplay  (change)="sub_categorySelect($event)" required>
             <option hidden disabled>Select Sub Category</option>
             <option>{{subCatoption1}}</option>
             <option>{{subCatoption2}}</option>
