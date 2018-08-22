@@ -23,6 +23,7 @@ A shopping cart on MongoDb, Angular 5 and nodeJs
 - cd nodeSever
 - npm install
 - cd ../peroKartAppDB
-- mongorestore peroKartAppDB
+- mongorestore -d myEkartAppDB myEkartAppDB/
 - node server/server.js
 - open localhost:3000
+
