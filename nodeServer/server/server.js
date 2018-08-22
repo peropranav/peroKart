@@ -17,7 +17,7 @@ var path = require('path');
 var url = require('url');
 const mongoose = require('mongoose');
 //mongoose.connect('mongodb://perokartDB:pero9pero@ds253891.mlab.com:53891/perokart')
-mongoose.connect('mongodb://localhost/myEkartApp');
+mongoose.connect('mongodb://localhost/myEkartAppDB');
 
 // console.log("Path : ", __dirname + '/../public');
 
