@@ -85,6 +85,7 @@ export class ViewAllProductComponent implements OnInit {
 
   }
   ngOnInit() {
+    console.log("######################################");
     this.getData(this.p);
   }
 

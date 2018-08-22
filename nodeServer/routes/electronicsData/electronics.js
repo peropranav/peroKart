@@ -5,6 +5,7 @@ const port=process.env.PORT ||portDev.port;
 
 
 router.get('/:pageNumber',function (req,res) {
+    console.log("**********************");
     var data;
     var totalItem;
       var pageNumber=req.params.pageNumber;
