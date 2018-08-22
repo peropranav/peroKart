@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13ea031f-0437-4278-a2e0-98b0fc249774" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/myEkart github.iml" afterPath="$PROJECT_DIR$/.idea/myEkart github.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularClient/src/app/appmain/view-all-product/view-all-product.component.ts" afterPath="$PROJECT_DIR$/angularClient/src/app/appmain/view-all-product/view-all-product.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.js" afterPath="$PROJECT_DIR$/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeServer/routes/electronicsData/electronics.js" afterPath="$PROJECT_DIR$/nodeServer/routes/electronicsData/electronics.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeServer/server/server.js" afterPath="$PROJECT_DIR$/nodeServer/server/server.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -296,12 +291,12 @@
       <workItem from="1534415368350" duration="5398000" />
       <workItem from="1534749005429" duration="23479000" />
       <workItem from="1534916856712" duration="2081000" />
-      <workItem from="1534919623135" duration="1679000" />
+      <workItem from="1534919623135" duration="1850000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72212000" />
+    <option name="totallyTimeSpent" value="72383000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
