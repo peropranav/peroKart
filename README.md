@@ -16,3 +16,13 @@ A shopping cart on MongoDb, Angular 5 and nodeJ
 - cd nodeServer
 - node server/server.js
 - open localhost:4200
+
+## Run build version
+- clone this repo
+- unzip it
+- cd nodeSever
+- npm install
+- cd ../peroKartAppDB
+- mongorestore peroKartAppDB
+- node server/server.js
+- open localhost:3000
