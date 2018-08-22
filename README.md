@@ -1,6 +1,6 @@
 # peroKart
 
-A shopping cart on MongoDb, Angular 5 and nodeJ
+A shopping cart on MongoDb, Angular 5 and nodeJs
 
 ## How to Run
 - clone this repo
