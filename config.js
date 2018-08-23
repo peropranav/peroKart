@@ -13,7 +13,7 @@ const config = {
         {
         'secret': 'supersecret',
         'port' : '3000',
-        'domain':'18.222.255.120:',
+        'domain':'http://18.222.255.120:',
         }
 }
 
