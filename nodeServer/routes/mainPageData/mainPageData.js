@@ -3,9 +3,8 @@ var electronicsData=require('../../model/electronicsModel');
 var fashionData=require('../../model/fashionModel');
 var booksData=require('../../model/booksModel');
 var watchesData=require('../../model/watchesModel');
+var config= require('../../../config')
 
-var portDev= require('../../../config');
-const port=process.env.PORT ||portDev.port;
 router.get('/',function (req,res) {
     console.log("hello");
 
@@ -90,7 +89,7 @@ var promise1Electronics= new Promise(function (resolve,reject) {
             totalData=totalData.concat(booksCardData);
             for(var i=0;i<totalData.length;i++)
             {
-                totalData[i].imgLink = `http://localhost:${port}`+ totalData[i].imgLink;
+                totalData[i].imgLink = `${config.domain}${config.port}`+ totalData[i].imgLink;
             }
          res.json(totalData)
         })

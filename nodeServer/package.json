@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prod": "NODE_ENV=prodMode node server/server.js",
+    "dev": "NODE_ENV=devMode node server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

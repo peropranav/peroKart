@@ -1,31 +1,31 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import swal from 'sweetalert';
-import {port} from '../../../../config.js';
+import {environment} from '../../environments/environment'
 @Injectable({
   providedIn: 'root'
 })
 export class DatatravelService {
+  portDomainDecider
   constructor(private HttpClients: HttpClient) {
   }
   flag = 0;
   cartItem = [] ;
   getSingleSelectedProductApi(category, id) {
     console.log(id);
-    return this.HttpClients.get(`http://localhost:${port}/api/${category}/a/${id}`);
+    return this.HttpClients.get(`${environment.domain}${environment.port}/api/${category}/a/${id}`);
   }
   getDataFromServerElectronics(p) {
-    console.log(port);
-    return this.HttpClients.get(`http://localhost:${port}/api/electronics/${p}`);
+    return this.HttpClients.get(`${environment.domain}${environment.port}/api/electronics/${p}`);
   }
   getDataFromServerFashion(p) {
-    return this.HttpClients.get(`http://localhost:${port}/api/fashion/${p}`);
+    return this.HttpClients.get(`${environment.domain}${environment.port}/api/fashion/${p}`);
   }
   getDataFromServerBooks(p) {
-    return this.HttpClients.get(`http://localhost:${port}/api/books/${p}`);
+    return this.HttpClients.get(`${environment.domain}${environment.port}/api/books/${p}`);
   }
   getDataFromServerWatches(p) {
-    return this.HttpClients.get(`http://localhost:${port}/api/watches/${p}`);
+    return this.HttpClients.get(`${environment.domain}${environment.port}/api/watches/${p}`);
   }
   addToCart(dataForCart) {
     this.flag = 0;

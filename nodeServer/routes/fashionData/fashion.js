@@ -1,7 +1,6 @@
 var router=require('express').Router();
 var fashionData=require('../../model/fashionModel');
-var portDev= require('../../../config');
-const port=process.env.PORT ||portDev.port;
+var config= require('../../../config')
 
 // router.get('/',function (req,res) {
 //     var data;
@@ -38,7 +37,7 @@ router.get('/:pageNumber',function (req,res) {
             for(var i=0;i<data.length;i++)
             {
                 //console.log("hello")
-                data[i].imgLink = `http://localhost:${port}`+ data[i].imgLink;
+                data[i].imgLink = `${config.domain}${config.port}`+ data[i].imgLink;
             }
 
             fashionData.count({},function (err,count) {
@@ -85,7 +84,7 @@ router.get('/a/:id',function (req,res) {
                 for(var i=0;i<dataToBeSend.length;i++)
                 {
                     console.log("hello")
-                    dataToBeSend[i].imgLink = `http://localhost:${port}`+ dataToBeSend[i].imgLink;
+                    dataToBeSend[i].imgLink = `${config.domain}${config.port}`+ dataToBeSend[i].imgLink;
                 }
                 res.json(dataToBeSend)
             })

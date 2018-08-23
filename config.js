@@ -1,18 +1,20 @@
-module.exports={
+const config = {
+    env: process.env.NODE_ENV,
+    // 'port': '3000',
+    // 'secret': 'supersecret'
+    devMode:
+        {
+        'secret': 'supersecret',
+        'port' : '3000',
+        'domain':'http://localhost:'
+        },
 
-    'port': '3000',
-    'secret': 'supersecret'
-    // development:
-    //     {
-    //     'secret': 'supersecret',
-    //     'port' : '3000',
-    //     'prodDomain':'18.222.255.120'
-    //     },
-    //
-    // production:
-    //     {
-    //     'secret': 'supersecret',
-    //     'port' : '3000',
-    //     'prodDomain':'18.222.255.120',
-    //     }
+    prodMode:
+        {
+        'secret': 'supersecret',
+        'port' : '3000',
+        'domain':'18.222.255.120:',
+        }
 }
+
+module.exports = config[config.env];

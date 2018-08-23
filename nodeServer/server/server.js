@@ -1,7 +1,6 @@
 var express = require ('express');
 var app = express();
 var configFile= require('../../config');
-const port=process.env.PORT ||configFile.port;
 const bodyParser = require('body-parser');
 var router=express.Router();
 var fashionRouter=require('../routes/fashionData/fashion');
@@ -14,25 +13,19 @@ var authentication = require('../routes/auth/authSellor');
 var sellorProfile = require('../routes/sellorProfile/dashboard')
 var cors = require('cors');
 var path = require('path');
-var url = require('url');
 const mongoose = require('mongoose');
-//mongoose.connect('mongodb://perokartDB:pero9pero@ds253891.mlab.com:53891/perokart')
 mongoose.connect('mongodb://localhost/myEkartAppDB');
-
-// console.log("Path : ", __dirname + '/../public');
-
-
-var finalPath = path.join(__dirname + './../public');
+var config=require('../../config');
+var finalPath = path.join(__dirname + './../public/dist');
 
 app.use(express.static(finalPath)); //Serves resources from public folder
-
+app.use(express.static(__dirname + './../public'));
 //cors
 app.use(cors());
 
 // Parsers
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}));
-
 app.use('/api/uploadData',uploadData);
 app.use('/api/electronics',electronicsRouter);
 app.use('/api/fashion',fashionRouter);
@@ -41,14 +34,12 @@ app.use('/api/watches',watchesData);
 app.use('/api/auth',authentication);
 app.use('/api/mainPageData',mainPageData);
 app.use('/api/auth/profile',sellorProfile);
-console.log("The path will be:",finalPath);
-app.get('/', function (req,res) {
-    console.log(finalPath);
+app.use('/', function (req,res) {
     res.sendFile(finalPath + '/index.html');
 
 })
-app.listen(port,function () {
-    console.log(`listening server at port ${port}`);
+
+
+app.listen(config.port,function () {
+    console.log(`listening server at port ${config.port}`);
 })
-
-

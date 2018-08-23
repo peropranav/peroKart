@@ -2,9 +2,8 @@ var router=require('express').Router();
 var sellorSchema= require('../../model/sellor');
 var jwt = require('jsonwebtoken');
 var bcrypt = require('bcryptjs');
-var config = require('../../../config');
+var config=require('../../server/server');
 router.post('/register',function (req,res) {
-
     console.log(req.body);
 
     var hashedPassword=bcrypt.hashSync(req.body.password,8);

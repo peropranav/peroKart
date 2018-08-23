@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import {environment} from '../../../environments/environment';
 
 @Component({
   selector: 'app-cards',
@@ -21,7 +22,7 @@ export class CardsComponent implements OnInit {
 
 
   ngOnInit() {
-    this.httpClient.get('http://localhost:3000/api/mainPageData').subscribe((data) => {
+    this.httpClient.get(`${environment.domain}${environment.port}/api/mainPageData`).subscribe((data) => {
       console.log(data);
       this.viewAllCardArray = Object.keys(data).map(function (key) {
         return data[key];

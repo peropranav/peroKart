@@ -2,8 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13ea031f-0437-4278-a2e0-98b0fc249774" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/angularClient/src/app/appmain/datatravel.service.ts" afterPath="$PROJECT_DIR$/angularClient/src/app/appmain/datatravel.service.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.js" afterPath="$PROJECT_DIR$/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeServer/package.json" afterPath="$PROJECT_DIR$/nodeServer/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeServer/routes/auth/authSellor.js" afterPath="$PROJECT_DIR$/nodeServer/routes/auth/authSellor.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeServer/routes/auth/verifyToken.js" afterPath="$PROJECT_DIR$/nodeServer/routes/auth/verifyToken.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeServer/routes/booksData/books.js" afterPath="$PROJECT_DIR$/nodeServer/routes/booksData/books.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeServer/routes/dataUpload/dataUpload.js" afterPath="$PROJECT_DIR$/nodeServer/routes/dataUpload/dataUpload.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeServer/routes/electronicsData/electronics.js" afterPath="$PROJECT_DIR$/nodeServer/routes/electronicsData/electronics.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeServer/routes/fashionData/fashion.js" afterPath="$PROJECT_DIR$/nodeServer/routes/fashionData/fashion.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeServer/routes/mainPageData/mainPageData.js" afterPath="$PROJECT_DIR$/nodeServer/routes/mainPageData/mainPageData.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeServer/routes/sellorProfile/dashboard.js" afterPath="$PROJECT_DIR$/nodeServer/routes/sellorProfile/dashboard.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeServer/routes/watchesData/watches.js" afterPath="$PROJECT_DIR$/nodeServer/routes/watchesData/watches.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nodeServer/server/server.js" afterPath="$PROJECT_DIR$/nodeServer/server/server.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,67 +29,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nodeServer/server/server.js">
+      <file leaf-file-name="watches.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nodeServer/routes/watchesData/watches.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-              <folding>
-                <marker date="1534922562423" expanded="true" signature="1664:1741" ph="{...}" />
-                <marker date="1534922562423" expanded="true" signature="1771:1827" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view-all-product.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angularClient/src/app/appmain/view-all-product/view-all-product.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            <state relative-caret-position="30">
+              <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angularClient/src/app/appmain/layout/layout.component.html">
+      <file leaf-file-name="dashboard.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nodeServer/routes/sellorProfile/dashboard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="20" column="53" lean-forward="false" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="53" />
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view-all-product.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angularClient/src/app/appmain/view-all-product/view-all-product.component.ts">
+      <file leaf-file-name="mainPageData.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nodeServer/routes/mainPageData/mainPageData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+            <state relative-caret-position="75">
+              <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="fashion.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nodeServer/routes/fashionData/fashion.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+            <state relative-caret-position="194">
+              <caret line="86" column="72" lean-forward="false" selection-start-line="86" selection-start-column="66" selection-end-line="86" selection-end-column="72" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="datatravel.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angularClient/src/app/appmain/datatravel.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="49" />
-              <folding>
-                <element signature="e#0#43#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -85,9 +72,61 @@
       <file leaf-file-name="electronics.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nodeServer/routes/electronicsData/electronics.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="42" lean-forward="false" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+            <state relative-caret-position="209">
+              <caret line="63" column="72" lean-forward="false" selection-start-line="63" selection-start-column="66" selection-end-line="63" selection-end-column="72" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dataUpload.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nodeServer/routes/dataUpload/dataUpload.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="53" column="64" lean-forward="false" selection-start-line="53" selection-start-column="64" selection-end-line="53" selection-end-column="64" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="books.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nodeServer/routes/booksData/books.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="86" column="72" lean-forward="false" selection-start-line="86" selection-start-column="66" selection-end-line="86" selection-end-column="72" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="verifyToken.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nodeServer/routes/auth/verifyToken.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="authSellor.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nodeServer/routes/auth/authSellor.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="870">
+              <caret line="58" column="53" lean-forward="false" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="datatravel.service.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/angularClient/src/app/appmain/datatravel.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,6 +145,12 @@
       <find>swal</find>
       <find>const</find>
       <find>user</find>
+      <find>secret</find>
+      <find>portco</find>
+      <find>portcon</find>
+      <find>config.port</find>
+      <find>port</find>
+      <find>config</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -119,7 +164,6 @@
         <option value="$PROJECT_DIR$/angularClient/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/angularClient/src/app/sellor/signup/signup.component.css" />
         <option value="$PROJECT_DIR$/angularClient/src/app/sellor/sellorlayout/sellorlayout.component.html" />
-        <option value="$PROJECT_DIR$/angularClient/src/app/appmain/datatravel.service.ts" />
         <option value="$PROJECT_DIR$/angularClient/src/app/sellor/signup/signup.component.html" />
         <option value="$PROJECT_DIR$/angularClient/src/app/sellor/login/login.component.css" />
         <option value="$PROJECT_DIR$/angularClient/src/app/sellor/sellor-dashboard/sellor-dashboard.component.css" />
@@ -127,9 +171,6 @@
         <option value="$PROJECT_DIR$/nodeServer/routes/sellorDashboard/dashboard.js" />
         <option value="$PROJECT_DIR$/angularClient/src/app/sellor/auth-guard.ts" />
         <option value="$PROJECT_DIR$/angularClient/src/app/sellor/sellor.module.ts" />
-        <option value="$PROJECT_DIR$/nodeServer/routes/auth/verifyToken.js" />
-        <option value="$PROJECT_DIR$/nodeServer/routes/auth/authSellor.js" />
-        <option value="$PROJECT_DIR$/nodeServer/routes/sellorProfile/dashboard.js" />
         <option value="$PROJECT_DIR$/angularClient/src/app/sellor/sellor-routing.module.ts" />
         <option value="$PROJECT_DIR$/angularClient/src/app/app-routing.module.ts" />
         <option value="$PROJECT_DIR$/angularClient/src/app/sellor/logout/logout.component.ts" />
@@ -150,15 +191,24 @@
         <option value="$PROJECT_DIR$/angularClient/src/app/sellor/sellor-service.service.ts" />
         <option value="$PROJECT_DIR$/angularClient/src/app/sellor/editproducts/editproducts.component.ts" />
         <option value="$PROJECT_DIR$/nodeServer/model/sellor.js" />
-        <option value="$PROJECT_DIR$/nodeServer/routes/dataUpload/dataUpload.js" />
         <option value="$PROJECT_DIR$/angularClient/src/app/sellor/addproducts/addproducts.component.html" />
         <option value="$PROJECT_DIR$/angularClient/src/app/sellor/editproducts/editproducts.component.html" />
-        <option value="$PROJECT_DIR$/config.js" />
-        <option value="$PROJECT_DIR$/nodeServer/server/server.js" />
-        <option value="$PROJECT_DIR$/nodeServer/server/server.js" />
-        <option value="$PROJECT_DIR$/nodeServer/routes/electronicsData/electronics.js" />
         <option value="$PROJECT_DIR$/angularClient/src/app/appmain/view-all-product/view-all-product.component.ts" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/nodeServer/package.json" />
+        <option value="$PROJECT_DIR$/config.js" />
+        <option value="$PROJECT_DIR$/nodeServer/routes/booksData/books.js" />
+        <option value="$PROJECT_DIR$/nodeServer/routes/dataUpload/dataUpload.js" />
+        <option value="$PROJECT_DIR$/nodeServer/routes/auth/verifyToken.js" />
+        <option value="$PROJECT_DIR$/nodeServer/routes/auth/authSellor.js" />
+        <option value="$PROJECT_DIR$/nodeServer/server/server.js" />
+        <option value="$PROJECT_DIR$/nodeServer/server/server.js" />
+        <option value="$PROJECT_DIR$/nodeServer/routes/watchesData/watches.js" />
+        <option value="$PROJECT_DIR$/nodeServer/routes/sellorProfile/dashboard.js" />
+        <option value="$PROJECT_DIR$/nodeServer/routes/mainPageData/mainPageData.js" />
+        <option value="$PROJECT_DIR$/nodeServer/routes/fashionData/fashion.js" />
+        <option value="$PROJECT_DIR$/nodeServer/routes/electronicsData/electronics.js" />
+        <option value="$PROJECT_DIR$/angularClient/src/app/appmain/datatravel.service.ts" />
       </list>
     </option>
   </component>
@@ -236,20 +286,75 @@
             <path>
               <item name="myEkart_github" type="b2602c69:ProjectViewProjectNode" />
               <item name="myEkart_github" type="462c0819:PsiDirectoryNode" />
-              <item name="angularClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="appmain" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
+              <item name="nodeServer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myEkart_github" type="b2602c69:ProjectViewProjectNode" />
               <item name="myEkart_github" type="462c0819:PsiDirectoryNode" />
-              <item name="angularClient" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="appmain" type="462c0819:PsiDirectoryNode" />
-              <item name="view-all-product" type="462c0819:PsiDirectoryNode" />
+              <item name="nodeServer" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myEkart_github" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myEkart_github" type="462c0819:PsiDirectoryNode" />
+              <item name="nodeServer" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myEkart_github" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myEkart_github" type="462c0819:PsiDirectoryNode" />
+              <item name="nodeServer" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="booksData" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myEkart_github" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myEkart_github" type="462c0819:PsiDirectoryNode" />
+              <item name="nodeServer" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="dataUpload" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myEkart_github" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myEkart_github" type="462c0819:PsiDirectoryNode" />
+              <item name="nodeServer" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="electronicsData" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myEkart_github" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myEkart_github" type="462c0819:PsiDirectoryNode" />
+              <item name="nodeServer" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="fashionData" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myEkart_github" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myEkart_github" type="462c0819:PsiDirectoryNode" />
+              <item name="nodeServer" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="mainPageData" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myEkart_github" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myEkart_github" type="462c0819:PsiDirectoryNode" />
+              <item name="nodeServer" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="sellorProfile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myEkart_github" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myEkart_github" type="462c0819:PsiDirectoryNode" />
+              <item name="nodeServer" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="watchesData" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myEkart_github" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myEkart_github" type="462c0819:PsiDirectoryNode" />
+              <item name="nodeServer" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -306,12 +411,12 @@
       <workItem from="1534415368350" duration="5398000" />
       <workItem from="1534749005429" duration="23479000" />
       <workItem from="1534916856712" duration="2081000" />
-      <workItem from="1534919623135" duration="2260000" />
+      <workItem from="1534919623135" duration="10971000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72793000" />
+    <option name="totallyTimeSpent" value="81504000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -346,67 +451,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/angularClient/src/app/appmain/cart/cart.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="55" column="35" lean-forward="true" selection-start-line="55" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angularClient/src/app/sellor/auth-guard.ts" />
-    <entry file="file://$PROJECT_DIR$/angularClient/src/app/sellor/sellor-service.service.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angularClient/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angularClient/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angularClient/src/app/appmain/appmain.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="11" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angularClient/src/app/sellor/sellor.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nodeServer/model/electronicsModel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nodeServer/routes/auth/authSellor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="51" column="65" lean-forward="false" selection-start-line="51" selection-start-column="65" selection-end-line="51" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nodeServer/routes/sellorProfile/dashboard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="23" lean-forward="false" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -456,13 +504,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angularClient/angular.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="15" lean-forward="false" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
         </state>
       </provider>
     </entry>
@@ -571,13 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nodeServer/routes/auth/verifyToken.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nodeServer/model/admin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -599,20 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nodeServer/routes/mainPageData/mainPageData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1133">
-          <caret line="85" column="0" lean-forward="true" selection-start-line="83" selection-start-column="4" selection-end-line="85" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nodeServer/routes/dataUpload/dataUpload.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="232" column="29" lean-forward="true" selection-start-line="232" selection-start-column="29" selection-end-line="232" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angularClient/src/app/sellor/editproducts/editproducts.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1185">
@@ -627,53 +647,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nodeServer/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angularClient/src/app/sellor/sellor-service.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="24" column="44" lean-forward="false" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nodeServer/routes/electronicsData/electronics.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="42" lean-forward="false" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nodeServer/server/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-          <folding>
-            <marker date="1534922562423" expanded="true" signature="1664:1741" ph="{...}" />
-            <marker date="1534922562423" expanded="true" signature="1771:1827" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angularClient/src/app/appmain/datatravel.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="49" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -693,19 +670,169 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angularClient/src/app/appmain/view-all-product/view-all-product.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="90" column="0" lean-forward="true" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularClient/src/app/appmain/cards/cards.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularClient/src/app/appmain/cart/cart.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularClient/src/app/appmain/view-all-product/view-all-product.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" lean-forward="false" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularClient/src/app/appmain/view-single-product/view-single-product.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#50#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeServer/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularClient/src/environments/environment.prod.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularClient/angular.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="31" column="15" lean-forward="false" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="14" lean-forward="true" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeServer/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeServer/routes/watchesData/watches.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="17" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeServer/routes/sellorProfile/dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeServer/routes/mainPageData/mainPageData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeServer/routes/fashionData/fashion.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="86" column="72" lean-forward="false" selection-start-line="86" selection-start-column="66" selection-end-line="86" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeServer/routes/electronicsData/electronics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="63" column="72" lean-forward="false" selection-start-line="63" selection-start-column="66" selection-end-line="63" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeServer/routes/dataUpload/dataUpload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="53" column="64" lean-forward="false" selection-start-line="53" selection-start-column="64" selection-end-line="53" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeServer/routes/booksData/books.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="86" column="72" lean-forward="false" selection-start-line="86" selection-start-column="66" selection-end-line="86" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeServer/routes/auth/verifyToken.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nodeServer/routes/auth/authSellor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="58" column="53" lean-forward="false" selection-start-line="58" selection-start-column="47" selection-end-line="58" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angularClient/src/app/appmain/datatravel.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="31" lean-forward="true" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

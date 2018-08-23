@@ -1,8 +1,6 @@
 var router=require('express').Router();
 var booksData=require('../../model/booksModel');
-var portDev= require( '../../../config');
-const port=process.env.PORT ||portDev.port;
-
+var config= require('../../../config')
 
 //
 // router.get('/',function (req,res) {
@@ -42,7 +40,7 @@ router.get('/:pageNumber',function (req,res) {
             for(var i=0;i<data.length;i++)
             {
                 //console.log("hello")
-                data[i].imgLink = `http://localhost:${port}`+ data[i].imgLink;
+                data[i].imgLink = `${config.domain}${config.port}`+ data[i].imgLink;
             }
 
             booksData.count({},function (err,count) {
@@ -86,7 +84,7 @@ router.get('/a/:id',function (req,res) {
                 dataToBeSend=dataToBeSend.slice(0,4);
                 for(var i=0;i<dataToBeSend.length;i++)
                 {
-                    dataToBeSend[i].imgLink = `http://localhost:${port}`+ dataToBeSend[i].imgLink;
+                    dataToBeSend[i].imgLink = `${config.domain}${config.port}`+ dataToBeSend[i].imgLink;
                 }
                 res.json(dataToBeSend)
             })

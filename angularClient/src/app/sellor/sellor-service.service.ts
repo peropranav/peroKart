@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
-import {port} from '../../../../config.js';
+import {environment} from '../../environments/environment'
+
 @Injectable({
   providedIn: 'root'
 })
@@ -10,19 +11,19 @@ objUpdateData: any = {};
     createUser(user){
     console.log('on service')
       console.log(user.value)
-      return this.http.post(`http://localhost:${port}/api/auth/register`, user.value);
+      return this.http.post(`${environment.domain}${environment.port}/api/auth/register`, user.value);
 
   }
   updateSellorDB(id, name, price, description, userTokenObj){
     const headerUpdate = new HttpHeaders({['x-access-token']: userTokenObj['token']});
     headerUpdate.append('x-access-token', userTokenObj['token']);
     this.objUpdateData = { 'id': id,'name': name, 'price': price, 'description': description};
-    return this.http.post(`http://localhost:${port}/api/uploadData/updateSellorDB`, this.objUpdateData, {headers: headerUpdate});
+    return this.http.post(`${environment.domain}${environment.port}/api/uploadData/updateSellorDB`, this.objUpdateData, {headers: headerUpdate});
 
   }
   loginUser(user){
       console.log('user login method from service');
-    return this.http.post(`http://localhost:${port}/api/auth/login`, user.value);
+    return this.http.post(`${environment.domain}${environment.port}/api/auth/login`, user.value);
   }
   verifyUser(userTokenObj) {
     if (userTokenObj['token']) {
@@ -31,12 +32,12 @@ objUpdateData: any = {};
 
       console.log('user token method from service', userTokenObj['token']);
       headerDashboard.append('x-access-token', userTokenObj['token']);
-      return this.http.post(`http://localhost:${port}/api/auth/profile/dashboard`, {}, {headers: headerDashboard});
+      return this.http.post(`${environment.domain}${environment.port}/api/auth/profile/dashboard`, {}, {headers: headerDashboard});
     }
   }
   getSellorItemOnSale(userTokenObj) {
     const headerDashboard = new HttpHeaders({['x-access-token']: userTokenObj['token']});
-    return this.http.post(`http://localhost:${port}/api/auth/profile/viewproducts`, {}, {headers: headerDashboard});
+    return this.http.post(`${environment.domain}${environment.port}/api/auth/profile/viewproducts`, {}, {headers: headerDashboard});
 
   }
 }

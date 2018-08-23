@@ -1,9 +1,7 @@
 const router=require('express').Router();
 const sellorSchema = require('../../model/sellor')
-var portDev= require('../../../config');
 var verifyToken=require('../auth/verifyToken');
-const port=process.env.PORT ||portDev.port;
-
+var config= require('../../../config')
 
 router.post('/dashboard',verifyToken,function (req,res) {
     console.log(req.userId);
@@ -30,7 +28,7 @@ router.post('/viewproducts',verifyToken,function (req,res) {
             //console.log(result)
             for(var i =0 ;i < result['itemsOnSale'].length;i++)
             {
-                result['itemsOnSale'][i].imgLink = `http://localhost:${port}` + result['itemsOnSale'][i].imgLink;
+                result['itemsOnSale'][i].imgLink = `${config.domain}${config.port}` + result['itemsOnSale'][i].imgLink;
 
             }
             res.json(result['itemsOnSale']);
