@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {DatatravelService} from '../datatravel.service';
 import {ActivatedRoute} from '@angular/router';
+import { NgxSpinnerService } from '../../../../node_modules/ngx-spinner';
 
 @Component({
   selector: 'app-view-all-product',
@@ -12,7 +13,7 @@ export class ViewAllProductComponent implements OnInit {
   dataForCart: {};
   p = 1;
   totalItem: number;
-  constructor( private myProductService: DatatravelService , private route: ActivatedRoute) {}
+  constructor( private myProductService: DatatravelService , private route: ActivatedRoute, private spinner: NgxSpinnerService) {}
 
   getData(p) {
     console.log(this.route.snapshot.url[0].path);

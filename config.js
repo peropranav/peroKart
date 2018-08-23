@@ -5,14 +5,14 @@ const config = {
     devMode:
         {
         'secret': 'supersecret',
-        'port' : '3000',
+        'port' : '80',
         'domain':'http://localhost:'
         },
 
     prodMode:
         {
         'secret': 'supersecret',
-        'port' : '3000',
+        'port' : '80',
         'domain':'http://18.222.255.120:',
         }
 }
