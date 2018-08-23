@@ -20,7 +20,9 @@ A shopping cart on MongoDb, Angular 5 and nodeJs
 ## Run build version
 - clone this repo
 - unzip it
-- cd nodeSever
+- cd angularClient
+- ng build
+- cd ../nodeSever
 - npm install
 - cd ../peroKartAppDB
 - mongorestore -d myEkartAppDB myEkartAppDB/
