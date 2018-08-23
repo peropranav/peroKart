@@ -16,9 +16,11 @@ var path = require('path');
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/myEkartAppDB');
 var config=require('../../config');
-var finalPath = path.join(__dirname + './../public');
+var finalPath = path.join(__dirname + './../public/dist');
 
 app.use(express.static(finalPath)); //Serves resources from public folder
+app.use(express.static(__dirname + './../public')); //Serves resources from public folder
+
 //cors
 app.use(cors());
 
