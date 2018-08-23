@@ -3,7 +3,7 @@ import {HttpClient} from '@angular/common/http';
 import {NgxSpinnerService} from 'ngx-spinner';
 import {HttpHeaders} from "@angular/common/http";
 import swal from 'sweetalert';
-import {config} from '../../../../../config';
+import {environment} from '../../../environments/environment'
 @Component({
   selector: 'app-addproducts',
   templateUrl: './addproducts.component.html',
@@ -141,7 +141,7 @@ export class AddproductsComponent implements OnInit {
     fd.append('avatar', this.selectedFile, this.selectedFile.name);
     console.log(fd);
     console.log('headers:', headerUploadData)
-    this.http.post(`${config.domain}${config.port}/api/uploadData`, fd , {headers: headerUploadData}).subscribe(
+    this.http.post(`${environment.domain}${environment.port}/api/uploadData`, fd , {headers: headerUploadData}).subscribe(
       (success) => {
 
 swal('Added Succesfully', 'Added to your database', 'success');
