@@ -2,7 +2,7 @@ var router=require('express').Router();
 var sellorSchema= require('../../model/sellor');
 var jwt = require('jsonwebtoken');
 var bcrypt = require('bcryptjs');
-var config=require('../../server/server');
+var config=require('../../../config');
 router.post('/register',function (req,res) {
     console.log(req.body);
 
