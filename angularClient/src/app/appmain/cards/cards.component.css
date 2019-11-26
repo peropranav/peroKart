@@ -3,7 +3,6 @@
   height: 380px;
   text-align: center;
   padding: 7px;
-  border: 1px solid antiquewhite;
   transition: box-shadow 0.3s ease-in-out;
 }
 
@@ -21,7 +20,18 @@
   height: 80%;
 }
 
-.itemCard:hover
+/* .itemCard:hover
 {
   box-shadow: 10px 10px 10px 10px antiquewhite;
+} */
+.rowStyling 
+{
+  box-shadow: 3px 3px 3px 3px wheat;
+  padding: 15px;
+  margin-top: 20px;
+}
+.styleFont {
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 500;
 }
